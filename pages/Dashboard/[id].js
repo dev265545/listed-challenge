@@ -14,7 +14,7 @@ import { signOut, useSession } from 'next-auth/react'
 function Dashboard() {
     const { data: session } = useSession();
   return (
-    <div className="lg:flex bg-[#F5F5F5] min-h-screen  lg:flex-row gap-60">
+    <div className="lg:flex bg-[#F5F5F5] min-h-screen  lg:flex-row lg:gap-60">
       <Navbar />
       <div className="p-1 gap-5 flex flex-col ">
         <div className=" flex flex-row ">

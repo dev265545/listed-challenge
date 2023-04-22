@@ -19,8 +19,8 @@ function login({ providers }) {
     }, [session]);
  
   return (
-    <section  className="">
-      <div className="  h-full scroll-smooth  ">
+    <section className="">
+      <div className="  bg-opacity-30  h-full scroll-smooth  ">
         <div className=" flex w-full overflow-x-auto  flex-col lg:flex-row md:flex-col bg-opacity-5  ">
           <div className="  text-white items-center flex justify-center lg:w-[588px] lg:h-screen   font-montserrat font-bold  w-full  bg-black ">
             <div className="flex items-center text-[72px] justify-center p-20 m-20 ">
@@ -30,7 +30,7 @@ function login({ providers }) {
           <div className=" flex items-center justify-center p-10 md:px-48 lg:px-48 lg:py-24 bg-[#F5F5F5] bg-opacity-30  ">
             <div class="  items-center justify-center w-full   ">
               <div class="">
-                <h3 class=" text-4xl  bg-[#F5F5F5]  font-montserrat font-bold text-black bg-opacity-30 ">
+                <h3 class=" text-4xl  bg-[#F5F5F5] bg-opacity-30  font-montserrat font-bold text-black">
                   Sign in
                 </h3>
                 <h3 class="mb-4 text-md inline  font-lato  font-normal text-black ">
@@ -138,16 +138,19 @@ function login({ providers }) {
                       >
                         Sign In
                       </button>
-                      <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
-                        Not registered?{" "}
-                        <a
-                          href="#"
-                          class="text-blue-700 hover:underline dark:text-blue-500"
-                        >
-                          Create account
-                        </a>
-                      </div>
                     </div>
+                  </div>
+                </div>
+                <div className='flex items-center justify-center'>
+                  <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                    Don't have a account ?
+                    <a
+                      href="#"
+                      class="text-blue-700 hover:underline dark:text-blue-500"
+                    >
+                      {" "}
+                      Register Here
+                    </a>
                   </div>
                 </div>
               </div>
