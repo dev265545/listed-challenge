@@ -9,14 +9,13 @@ import { useEffect } from 'react';
 export default function Home() {
   const { data: session } = useSession();
 const router = useRouter();
-console.log(session?.user?.uid)
-useEffect(()=>{
-if(session) router.push(`/Dashboard/${session.user.uid}`)
-else{
-  router.push('/login')
-}
-},[session])
 
+useEffect(()=>{
+  if(session) router.push(`/Dashboard/${session.user.uid}`)
+  else {
+    router.push('/login')
+  }
+})
 
   return (
    <div>

@@ -160,14 +160,3 @@ function login({ providers }) {
 }
 
 export default login
-export async function getServerSideProps(context) {
-  const providers = await getProviders();
-  const session = await getSession(context);
-
-  return {
-    props: {
-      providers,
-      session,
-    },
-  };
-}
